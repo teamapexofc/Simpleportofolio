@@ -10,8 +10,7 @@ A modern, full-stack portfolio website built with React, TypeScript, Express, an
 - 🎯 Type-safe with TypeScript
 - 🎨 Beautiful components with shadcn/ui
 - 📱 Fully responsive design
-- 🔄 Real-time Discord status integration
-- 📦 Easy deployment to Vercel
+- 📦 Easy deployment to Replit
 
 ## Tech Stack
 
@@ -23,6 +22,7 @@ A modern, full-stack portfolio website built with React, TypeScript, Express, an
 - shadcn/ui components
 - Wouter (routing)
 - TanStack Query
+- Framer Motion (animations)
 
 ### Backend
 - Node.js
@@ -39,8 +39,8 @@ A modern, full-stack portfolio website built with React, TypeScript, Express, an
 
 1. Clone the repository:
 ```bash
-git clone <your-repo-url>
-cd <your-repo-name>
+git clone https://github.com/teamapexofc/Simpleportofolio/
+cd Simpleportofolio
 ```
 
 2. Install dependencies:
@@ -91,75 +91,82 @@ The application will be available at:
 ### Download Source Code
 Visit `/download` to download the complete portfolio source code as a ZIP file.
 
-### Discord Status Integration
-The portfolio includes real-time Discord status using the Lanyard API. Update the Discord user ID in the relevant component.
-
 ### Responsive Design
 Built with mobile-first approach using Tailwind CSS breakpoints.
 
-## Deployment on Vercel
+### Animated Components
+Smooth animations powered by Framer Motion for an engaging user experience.
+
+## Deployment on Replit
 
 ### Quick Deploy
 
-1. Push your code to GitHub
+1. Import to Replit:
+   - Go to [replit.com](https://replit.com)
+   - Click "Create Repl"
+   - Select "Import from GitHub"
+   - Enter: `https://github.com/teamapexofc/Simpleportofolio/`
 
-2. Import to Vercel:
-   - Go to [vercel.com](https://vercel.com)
-   - Click "New Project"
-   - Import your GitHub repository
-   - Vercel will auto-detect the configuration from `vercel.json`
+2. Click "Import from GitHub"
 
-3. Click "Deploy"
+3. The Repl will automatically:
+   - Install dependencies
+   - Configure the environment
+   - Be ready to run with the Run button
 
-### Manual Configuration (if needed)
+### Running on Replit
 
-If auto-detection doesn't work, use these settings:
+- Click the **Run** button at the top
+- Your site will be live at the Replit-provided URL
+- The site automatically uses port 5000 which is configured for production
 
-**Build Settings:**
-- Framework Preset: `Other`
-- Build Command: `npm run build`
-- Output Directory: `dist/public`
-- Install Command: `npm install`
+### Replit Deployment
 
-**Environment Variables:**
-Add any required environment variables in the Vercel dashboard under Settings → Environment Variables.
+To deploy your portfolio to production on Replit:
 
-### vercel.json Configuration
-
-The project includes a `vercel.json` with:
-- Static site deployment configuration
-- API route handling for `/download`
-- Security headers
-
-### Post-Deployment
-
-After deployment:
-1. Your site will be live at `your-project.vercel.app`
-2. Configure custom domain if needed
-3. Set up environment variables in Vercel dashboard
-4. The `/download` endpoint will work automatically
+1. Click on the "Deploy" tab in your Repl
+2. Click "Deploy" to publish your site
+3. Your portfolio will be live with a public URL
 
 ## Customization
 
 ### Branding
 - Update meta tags in `client/index.html`
 - Replace favicon in `client/public/`
-- Update content in components
+- Update content in components (Hero, About, Contact, etc.)
 
 ### Styling
 - Modify `client/src/index.css` for global styles
 - Update Tailwind configuration as needed
 - Customize shadcn/ui components in `client/src/components/ui/`
 
+### Content Updates
+- **Hero Section**: Edit `client/src/components/Hero.tsx`
+- **About Section**: Edit `client/src/components/About.tsx`
+- **Projects**: Edit `client/src/components/Projects.tsx`
+- **Contact Info**: Edit `client/src/components/Contact.tsx`
+- **Footer Links**: Edit `client/src/components/Footer.tsx`
+
 ### API Routes
 - Add new routes in `server/routes.ts`
-- Backend runs on the same domain in production (serverless)
+- Backend runs on the same domain in production
 
 ## Important URLs
 
 After deployment, your portfolio will have:
-- **Main Site**: `https://your-project.vercel.app`
-- **Download Source**: `https://your-project.vercel.app/download`
+- **Main Site**: Your Replit deployment URL
+- **Download Source**: `your-replit-url/download`
+
+## Technologies Used
+
+- **React 19** - Modern UI library
+- **TypeScript** - Type-safe development
+- **Vite** - Fast build tool
+- **Tailwind CSS** - Utility-first CSS framework
+- **shadcn/ui** - High-quality UI components
+- **Framer Motion** - Animation library
+- **Express** - Backend server
+- **Wouter** - Lightweight routing
 
 ## License
 
@@ -172,9 +179,9 @@ Contributions are welcome! Feel free to submit issues and pull requests.
 ## Support
 
 For issues or questions:
-- Open an issue on GitHub
+- Open an issue on [GitHub](https://github.com/teamapexofc/Simpleportofolio/issues)
 - Check existing issues for solutions
 
 ---
 
-Built with ❤️ using React, TypeScript, and Vercel
+Built with ❤️ by ApeX Development using React, TypeScript, and Replit
