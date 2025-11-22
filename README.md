@@ -1,4 +1,3 @@
-
 # Portfolio - Open Source
 
 A modern, full-stack portfolio website built with React, TypeScript, Express, and Tailwind CSS.
@@ -97,36 +96,34 @@ Built with mobile-first approach using Tailwind CSS breakpoints.
 ### Animated Components
 Smooth animations powered by Framer Motion for an engaging user experience.
 
-## Deployment on Replit
+## Deployment
 
-### Quick Deploy
+### Deploy on Vercel
 
-1. Import to Replit:
-   - Go to [replit.com](https://replit.com)
-   - Click "Create Repl"
-   - Select "Import from GitHub"
-   - Enter: `https://github.com/teamapexofc/Simpleportofolio/`
+The easiest way to deploy this portfolio is using [Vercel](https://vercel.com):
 
-2. Click "Import from GitHub"
+1. Push your code to a GitHub repository
+2. Visit [vercel.com](https://vercel.com) and sign in
+3. Click "New Project"
+4. Import your GitHub repository
+5. Vercel will automatically detect the framework and configure:
+   - Build Command: `npm run build`
+   - Output Directory: `dist/public`
+   - Install Command: `npm install`
+6. Click "Deploy"
+7. Your portfolio will be live at `<your-project>.vercel.app`
 
-3. The Repl will automatically:
-   - Install dependencies
-   - Configure the environment
-   - Be ready to run with the Run button
+You can also connect a custom domain in the Vercel project settings.
 
-### Running on Replit
+### Local Development
 
-- Click the **Run** button at the top
-- Your site will be live at the Replit-provided URL
-- The site automatically uses port 5000 which is configured for production
+To run the development server locally:
 
-### Replit Deployment
+```bash
+npm run dev
+```
 
-To deploy your portfolio to production on Replit:
-
-1. Click on the "Deploy" tab in your Repl
-2. Click "Deploy" to publish your site
-3. Your portfolio will be live with a public URL
+The application will be available at http://localhost:5000
 
 ## Customization
 
@@ -154,8 +151,8 @@ To deploy your portfolio to production on Replit:
 ## Important URLs
 
 After deployment, your portfolio will have:
-- **Main Site**: Your Replit deployment URL
-- **Download Source**: `your-replit-url/download`
+- **Main Site**: `https://<your-project>.vercel.app` (or your custom domain)
+- **Download Source**: `https://<your-project>.vercel.app/download`
 
 ## Technologies Used
 
@@ -184,4 +181,4 @@ For issues or questions:
 
 ---
 
-Built with ❤️ by ApeX Development using React, TypeScript, and Replit
+Built with ❤️ by [ApeX Development](https://github.com/teamapexofc) using React and TypeScript
